@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "course-project-routing-final": {
+    "recipe-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/course-project-routing-final",
+            "outputPath": "dist/recipe-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "course-project-routing-final:build:production"
+              "buildTarget": "recipe-app:build:production"
             },
             "development": {
-              "buildTarget": "course-project-routing-final:build:development"
+              "buildTarget": "recipe-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "course-project-routing-final:build"
+            "buildTarget": "recipe-app:build"
           }
         },
         "test": {
