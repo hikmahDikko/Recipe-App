@@ -3,7 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "dist/recipe-app",
+    "public": "dist/recipe-app/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
